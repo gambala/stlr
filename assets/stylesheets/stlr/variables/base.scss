@@ -1,0 +1,58 @@
+@import "stlr/variables/font-family";
+
+$base-background-color:          #fff !default;
+$base-border-radius:             4px !default;
+$base-color:                     #333 !default;
+$base-font-family-custom:        $font-family-sans-custom !default;
+$base-font-family:               $font-family-sans !default;
+$base-font-size:                 14px !default;
+$base-line-height-unitless:      1.428571429 !default; // 20/14
+$base-line-height-computed:      floor($base-font-size * $base-line-height-unitless) !default; // ~20px
+$base-padding-horizontal:        12px !default;
+$base-padding-vertical:          6px !default;
+
+$base-lg-border-radius:          6px !default;
+$base-lg-font-size:              ceil($base-font-size * 1.25) !default; // ~18px
+$base-lg-line-height-unitless:   1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$base-lg-padding-horizontal:     16px !default;
+$base-lg-padding-vertical:       10px !default;
+
+$base-sm-border-radius:          3px !default;
+$base-sm-font-size:              ceil($base-font-size * 0.85) !default; // ~12px
+$base-sm-line-height-unitless:   1.5 !default;
+$base-sm-padding-horizontal:     10px !default;
+$base-sm-padding-vertical:       5px !default;
+
+$base-xs-padding-horizontal:     5px !default;
+$base-xs-padding-vertical:       1px !default;
+
+$base-muted-color:               #777 !default;
+
+$base-light-color:               #eee !default;
+
+$base-primary-background-color:        darken(#428bca, 6.5%) !default; // #337ab7
+
+$base-success-background-color:        #5cb85c !default;
+$base-success-muted-background-color:  #dff0d8 !default;
+$base-success-muted-border-color:      darken(adjust-hue($base-success-muted-background-color, -10), 5%) !default;
+$base-success-muted-color:             #3c763d !default;
+
+$base-info-background-color:           #5bc0de !default;
+$base-info-muted-background-color:     #d9edf7 !default;
+$base-info-muted-border-color:         darken(adjust-hue($base-info-muted-background-color, -10), 7%) !default;
+$base-info-muted-color:                #31708f !default;
+
+$base-warning-background-color:        #f0ad4e !default;
+$base-warning-muted-background-color:  #fcf8e3 !default;
+$base-warning-muted-border-color:      darken(adjust-hue($base-warning-muted-background-color, -10), 5%) !default;
+$base-warning-muted-color:             #8a6d3b !default;
+
+$base-danger-background-color:         #d9534f !default;
+$base-danger-muted-background-color:   #f2dede !default;
+$base-danger-muted-border-color:       darken(adjust-hue($base-danger-muted-background-color, -10), 5%) !default;
+$base-danger-muted-color:              #a94442 !default;
+
+$base-active-background-color:         $base-primary-background-color !default;
+$base-active-color:                    #fff !default;
+
+$base-disabled-cursor:   not-allowed !default;

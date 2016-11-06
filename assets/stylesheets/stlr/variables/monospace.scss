@@ -1,0 +1,13 @@
+@import "stlr/variables/base";
+
+$code-background-color:       #f9f2f4 !default;
+$code-color:                  #c7254e !default;
+
+$kbd-background-color:        #333 !default;
+$kbd-color:                   #fff !default;
+
+$pre-background-color:        #f5f5f5 !default;
+$pre-border-color:            #ccc !default;
+$pre-color:                   $base-color !default;
+
+$pre-scrollable-max-height:   340px !default;

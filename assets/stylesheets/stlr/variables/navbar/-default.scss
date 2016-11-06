@@ -1,0 +1,17 @@
+$navbar-default-background-color:                 #f8f8f8 !default;
+$navbar-default-border-color:                     darken($navbar-default-background-color, 6.5%) !default;
+$navbar-default-color:                            #777 !default;
+
+$navbar-default-link-color:                       #777 !default;
+$navbar-default-link-hover-background-color:      transparent !default;
+$navbar-default-link-hover-color:                 #333 !default;
+$navbar-default-link-active-background-color:     darken($navbar-default-background-color, 6.5%) !default;
+$navbar-default-link-active-color:                #555 !default;
+$navbar-default-link-disabled-background-color:   transparent !default;
+$navbar-default-link-disabled-color:              #ccc !default;
+$navbar-default-brand-color:                      $navbar-default-link-color !default;
+$navbar-default-brand-hover-background-color:     transparent !default;
+$navbar-default-brand-hover-color:                darken($navbar-default-brand-color, 10%) !default;
+$navbar-default-toggle-border-color:              #ddd !default;
+$navbar-default-toggle-icon-bar-background-color: #888 !default;
+$navbar-default-toggle-hover-background-color:    #ddd !default;

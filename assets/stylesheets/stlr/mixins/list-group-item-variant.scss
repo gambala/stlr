@@ -1,0 +1,27 @@
+@mixin list-group-item-variant($state, $background-color, $color) {
+  .list-group-item-#{$state} {
+    background-color: $background-color;
+    color: $color;
+  }
+
+  a.list-group-item-#{$state},
+  button.list-group-item-#{$state} {
+    color: $color;
+
+    .list-group-item-heading {
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: darken($background-color, 5%);
+      color: $color;
+    }
+
+    &.active,
+    &.active:hover {
+      background-color: $color;
+      border-color: $color;
+      color: #fff;
+    }
+  }
+}

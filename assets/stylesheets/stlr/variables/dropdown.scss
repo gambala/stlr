@@ -1,0 +1,14 @@
+@import "stlr/variables/base";
+
+$dropdown-background-color:              #fff !default;
+$dropdown-border-color:                  rgba(0,0,0,.15) !default;
+$dropdown-z-index:                       1000 !default;
+
+$dropdown-divider-background-color:      #e5e5e5 !default;
+
+$dropdown-link-color:                    $base-color !default;
+$dropdown-link-hover-background-color:   #f5f5f5 !default;
+$dropdown-link-hover-color:              darken($base-color, 5%) !default;
+$dropdown-link-active-background-color:  $base-active-background-color !default;
+$dropdown-link-active-color:             $base-active-color !default;
+$dropdown-link-disabled-color:           $base-muted-color !default;

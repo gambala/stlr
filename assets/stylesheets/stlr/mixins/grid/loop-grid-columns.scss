@@ -1,0 +1,7 @@
+@import "stlr/mixins/grid/calc-grid-column";
+
+@mixin loop-grid-columns($columns, $class, $type) {
+  @for $i from 0 through $columns {
+    @include calc-grid-column($i, $class, $type);
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "gambala/stlr",
+    "description": "stlr is a couple of mixins for sass",
+    "keywords": ["stlr", "bootstrap", "css", "sass"],
+    "homepage": "http://github.com/gambala/stlr",
+    "authors": [
+        {
+            "name": "Vitaliy Emeliyantsev"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/gambala/stlr/issues"
+    },
+    "license": "MIT",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.3.x-dev"
+        }
+    }
+}

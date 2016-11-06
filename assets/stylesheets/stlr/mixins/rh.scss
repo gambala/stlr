@@ -1,0 +1,10 @@
+@import "stlr/variables/base";
+
+@function rh($height: 1, $qwazi: true, $line-height-base: $base-line-height-computed) {
+  @if (unitless($height)) {
+    @return $height * $line-height-base;
+  } @else {
+    $line-height: if($qwazi, $line-height-base/2, $line-height-base);
+    @return ceil($height / $line-height) * $line-height;
+  }
+}

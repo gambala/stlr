@@ -1,0 +1,30 @@
+{
+  "name": "stlr",
+  "homepage": "https://github.com/gambala/stlr",
+  "authors": [
+    "Vitaliy Emeliyantsev"
+  ],
+  "description": "stlr is a couple of mixins for sass",
+  "moduleType": "globals",
+  "main": [
+    "assets/stylesheets/stlr.scss"
+  ],
+  "keywords": [
+    "gambala",
+    "stlr",
+    "sass",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "lib",
+    "*.gemspec",
+    "Rakefile",
+    "Gemfile"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 2"
+  },
+  "version": "0.0.1"
+}

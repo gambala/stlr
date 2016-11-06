@@ -1,0 +1,11 @@
+// For neighbours styles
+
+@mixin between-neighbours($selectors) {
+  #{$selectors} {
+    & + {
+      #{$selectors} {
+        @content
+      }
+    }
+  }
+}

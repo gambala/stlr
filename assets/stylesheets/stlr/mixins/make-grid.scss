@@ -1,0 +1,12 @@
+@import "stlr/variables/grid";
+@import "stlr/mixins/grid/float-grid-columns";
+@import "stlr/mixins/grid/loop-grid-columns";
+
+// Create grid for specific class
+@mixin make-grid($class) {
+  @include float-grid-columns($class);
+  @include loop-grid-columns($grid-columns, $class, width);
+  @include loop-grid-columns($grid-columns, $class, pull);
+  @include loop-grid-columns($grid-columns, $class, push);
+  @include loop-grid-columns($grid-columns, $class, offset);
+}

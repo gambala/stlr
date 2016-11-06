@@ -1,0 +1,34 @@
+@import "stlr/variables/base";
+
+$panel-background-color:      #fff !default;
+$panel-border-radius:         $base-border-radius !default;
+
+$panel-inner-border-color:           #ddd !default;
+$panel-heading-padding:              10px 15px !default;
+$panel-body-padding:                 15px !default;
+$panel-footer-background-color:      #f5f5f5 !default;
+$panel-footer-padding:               $panel-heading-padding !default;
+
+$panel-default-border-color:               #ddd !default;
+$panel-default-color:                      $base-color !default;
+$panel-default-heading-background-color:   #f5f5f5 !default;
+
+$panel-primary-border-color:               $base-primary-background-color !default;
+$panel-primary-color:                      #fff !default;
+$panel-primary-heading-background-color:   $base-primary-background-color !default;
+
+$panel-success-border-color:               $base-success-muted-border-color !default;
+$panel-success-color:                      $base-success-muted-color !default;
+$panel-success-heading-background-color:   $base-success-muted-background-color !default;
+
+$panel-info-border-color:                  $base-info-muted-border-color !default;
+$panel-info-color:                         $base-info-muted-color !default;
+$panel-info-heading-background-color:      $base-info-muted-background-color !default;
+
+$panel-warning-border-color:               $base-warning-muted-border-color !default;
+$panel-warning-color:                      $base-warning-muted-color !default;
+$panel-warning-heading-background-color:   $base-warning-muted-background-color !default;
+
+$panel-danger-border-color:                $base-danger-muted-border-color !default;
+$panel-danger-color:                       $base-danger-muted-color !default;
+$panel-danger-heading-background-color:    $base-danger-muted-background-color !default;

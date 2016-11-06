@@ -1,0 +1,10 @@
+@import "stlr/variables/base";
+
+$breadcrumb-background-color:   #f5f5f5 !default;
+$breadcrumb-color:              #ccc !default;
+$breadcrumb-padding-horizontal: 15px !default;
+$breadcrumb-padding-vertical:   8px !default;
+
+$breadcrumb-separator:          "/" !default;
+
+$breadcrumb-active-color:       $base-muted-color !default;

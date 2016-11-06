@@ -1,0 +1,13 @@
+@import "stlr/variables/base";
+@import "stlr/variables/link";
+
+$badge-background-color:         $base-muted-color !default;
+$badge-border-radius:            10px !default;
+$badge-color:                    #fff !default;
+$badge-font-weight:              bold !default;
+$badge-line-height:              1 !default;
+
+$badge-link-hover-color:         #fff !default;
+
+$badge-active-background-color:  #fff !default;
+$badge-active-color:             $link-color !default;

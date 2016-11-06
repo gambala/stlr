@@ -1,0 +1,8 @@
+@import "stlr/mixins/rh";
+
+@mixin nav-divider($background-color: #e5e5e5) {
+  background-color: $background-color;
+  height: 1px;
+  margin: (rh(0.5) - 1) 0;
+  overflow: hidden;
+}

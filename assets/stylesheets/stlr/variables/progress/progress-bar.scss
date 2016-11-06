@@ -1,0 +1,9 @@
+@import "stlr/variables/base";
+
+$progress-bar-background-color:             $base-primary-background-color !default;
+$progress-bar-color:                        #fff !default;
+
+$progress-bar-success-background-color:     $base-success-background-color !default;
+$progress-bar-info-background-color:        $base-info-background-color !default;
+$progress-bar-warning-background-color:     $base-warning-background-color !default;
+$progress-bar-danger-background-color:      $base-danger-background-color !default;

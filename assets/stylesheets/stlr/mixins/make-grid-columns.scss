@@ -1,0 +1,15 @@
+@import "stlr/variables/grid";
+@import "stlr/mixins/gg";
+
+@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+  @for $i from (1 + 1) through $grid-columns {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    padding-left:  ceil(gg(0.5));
+    padding-right: floor(gg(0.5));
+    position: relative;
+  }
+}

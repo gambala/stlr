@@ -1,0 +1,10 @@
+@import "stlr/mixins/background-cover";
+
+@mixin retina-cover($lq-image, $hq-image) {
+  @include background-cover();
+  background-image: image_url($lq-image);
+
+  @media only screen and (min-resolution: 1.3dppx) {
+    background-image: image_url($hq-image);
+  }
+}

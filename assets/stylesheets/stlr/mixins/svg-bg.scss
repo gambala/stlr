@@ -1,9 +1,9 @@
-@mixin svg-bg($filename, $format: 'png', $options: '', $svg-options: $options) {
-  background: image_url($filename+'.'+$format) $options;
+@mixin svg-bg($filename, $format: '.png', $options: 50% 50% no-repeat, $svg-options: $options) {
+  background: image_url($filename + $format) $options;
 
   @media only screen and (min-resolution: 1.3dppx) {
     .svg & {
-      background: image_url($filename+'.svg') $svg-options
+      background: image_url($filename + '.svg') $svg-options
     }
   }
 }

@@ -3,7 +3,7 @@
 
   @media only screen and (min-resolution: 1.3dppx) {
     .svg & {
-      background: image_url($filename + '.svg') $svg-options
+      background: image_url($filename + '.svg') $svg-options;
     }
   }
 }

@@ -1,10 +1,16 @@
-@import "stlr/mixins/image";
-
-@mixin retina-image($lq-image, $hq-image, $image-width, $image-height) {
-  @include image($lq-image, $image-width, $image-height);
+@mixin retina-image($filename,
+                    $width,
+                    $height,
+                    $format: '.png',
+                    $options: 50% 50% no-repeat,
+                    $retina-options: $options) {
+  background: image_url($filename + $format) $options;
+  background-size: 100%;
+  height: $height;
+  width: $width;
 
   @media only screen and (min-resolution: 1.3dppx) {
-    background-image: image_url($hq-image);
+    background: image_url($filename + '@2x' + $format) $retina-options;
     background-size: 100%;
   }
 }

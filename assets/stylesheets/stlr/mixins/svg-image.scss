@@ -1,11 +1,17 @@
-@import "stlr/mixins/image";
-
-@mixin svg-image($bitmap-image, $svg-image, $image-width, $image-height) {
-  @include image($bitmap-image, $image-width, $image-height);
+@mixin svg-image($filename,
+                 $width,
+                 $height,
+                 $format: '.png',
+                 $options: 50% 50% no-repeat,
+                 $svg-options: $options) {
+  background: image_url($filename + $format) $options;
+  background-size: 100%;
+  height: $height;
+  width: $width;
 
   @media only screen and (min-resolution: 1.3dppx) {
     .svg & {
-      background-image: image_url($svg-image);
+      background: image_url($filename + '.svg') $svg-options;
       background-size: 100%;
     }
   }

@@ -1,5 +1,5 @@
 @import "stlr/variables/base";
-@import "stlr/mixins/rh";
+@import "stlr/functions/rh";
 
 @function rh-margin($height, $qwazi: true, $line-height-base: $base-line-height-computed) {
   @return rh($height, $qwazi, $line-height-base) - $height;

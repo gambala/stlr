@@ -1,0 +1,6 @@
+@mixin bg($filename, $format: '.png',
+                     $options: 50% 50% no-repeat,
+                     $size: null) {
+  background: image_url($filename + $format) $options;
+  background-size: $size;
+}

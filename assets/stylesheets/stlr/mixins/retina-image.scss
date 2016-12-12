@@ -3,14 +3,15 @@
                     $height,
                     $format: '.png',
                     $options: 50% 50% no-repeat,
-                    $retina-options: $options) {
+                    $retina-options: $options,
+                    $size: 100%) {
   background: image_url($filename + $format) $options;
-  background-size: 100%;
+  background-size: $size;
   height: $height;
   width: $width;
 
   @media only screen and (min-resolution: 1.3dppx) {
     background: image_url($filename + '@2x' + $format) $retina-options;
-    background-size: 100%;
+    background-size: $size;
   }
 }

@@ -3,16 +3,17 @@
                  $height,
                  $format: '.png',
                  $options: 50% 50% no-repeat,
-                 $svg-options: $options) {
+                 $svg-options: $options,
+                 $size: 100%) {
   background: image_url($filename + $format) $options;
-  background-size: 100%;
+  background-size: $size;
   height: $height;
   width: $width;
 
   @media only screen and (min-resolution: 1.3dppx) {
     .svg & {
       background: image_url($filename + '.svg') $svg-options;
-      background-size: 100%;
+      background-size: $size;
     }
   }
 }

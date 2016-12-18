@@ -1,17 +1,12 @@
 *.gem
-.sass-cache
-Gemfile.lock
 *.gemfile.lock
-.rvmrc
-.rbenv-version
-
-# Ignore bundler config
-/.bundle
-/vendor/cache
-/vendor/bundle
-tmp/
 .DS_Store
+.rbenv-version
+.rvmrc
+.sass-cache
+/.bundle
+/vendor/bundle
+/vendor/cache
+Gemfile.lock
 node_modules
-
-*.sublime-project
-*.sublime-workspace
+tmp/

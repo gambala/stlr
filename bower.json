@@ -12,8 +12,7 @@
   "keywords": [
     "gambala",
     "stlr",
-    "sass",
-    "bootstrap"
+    "sass"
   ],
   "license": "MIT",
   "ignore": [
@@ -23,8 +22,5 @@
     "Rakefile",
     "Gemfile"
   ],
-  "dependencies": {
-    "jquery": "1.9.1 - 2"
-  },
   "version": "0.0.1"
 }

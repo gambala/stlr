@@ -10,12 +10,8 @@ Gem::Specification.new do |s|
   s.summary  = 'stlr is a couple of mixins for sass'
   s.homepage = 'https://github.com/gambala/stlr'
   s.license  = 'MIT'
-
+  s.files    = `git ls-files`.split("\n")
   s.add_runtime_dependency 'sass', '>= 3.3.4'
   s.add_runtime_dependency 'autoprefixer-rails', '>= 5.2.1'
-
-  # Converter
-  s.add_development_dependency 'term-ansicolor'
-
-  s.files      = `git ls-files`.split("\n")
+  s.add_development_dependency 'term-ansicolor' # Converter
 end

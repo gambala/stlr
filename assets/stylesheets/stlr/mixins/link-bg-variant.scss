@@ -1,5 +1,0 @@
-@mixin link-bg-variant($parent, $background-color) {
-  a#{$parent}:hover {
-    background-color: darken($background-color, 10%);
-  }
-}

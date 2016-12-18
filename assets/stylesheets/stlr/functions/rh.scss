@@ -1,4 +1,4 @@
-@import "stlr/variables/base";
+$base-line-height-computed: 24px !default;
 
 @function rh($height: 1, $qwazi: true, $line-height-base: $base-line-height-computed) {
   @if (unitless($height)) {

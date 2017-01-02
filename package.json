@@ -1,6 +1,6 @@
 {
   "name": "stlr",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "stlr is a couple of mixins for sass",
   "style": "assets/stylesheets/stlr.scss",
   "sass": "assets/stylesheets/stlr.scss",

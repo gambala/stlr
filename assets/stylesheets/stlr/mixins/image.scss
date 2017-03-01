@@ -1,7 +1,11 @@
-@mixin image($image, $image-width, $image-height) {
-  background-image: image_url($image);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: $image-height;
-  width: $image-width;
+@mixin image($filename,
+             $width,
+             $height,
+             $format: '.png',
+             $options: 50% 50% no-repeat,
+             $size: 100%) {
+  background: image_url($filename + $format) $options;
+  background-size: $size;
+  height: $height;
+  width: $width;
 }

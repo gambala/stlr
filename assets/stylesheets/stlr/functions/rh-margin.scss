@@ -1,7 +1,0 @@
-@import "stlr/functions/rh";
-
-$base-line-height-computed: 24px !default;
-
-@function rh-margin($height, $qwazi: true, $line-height-base: $base-line-height-computed) {
-  @return rh($height, $qwazi, $line-height-base) - $height;
-}

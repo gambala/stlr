@@ -2,8 +2,9 @@
   "name": "stlr",
   "version": "2.0.0",
   "description": "stlr is a couple of mixins for sass",
-  "style": "assets/stylesheets/stlr.scss",
-  "sass": "assets/stylesheets/stlr.scss",
+  "style": "app/assets/stylesheets/stlr.scss",
+  "sass": "app/assets/stylesheets/stlr.scss",
+  "main": "app/javascript/scripts/WebFontLoader.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/gambala/stlr"
@@ -11,8 +12,7 @@
   "keywords": [
     "stlr",
     "sass",
-    "css",
-    "eyeglass-module"
+    "css"
   ],
   "contributors": [
     "Vitaliy Emeliyantsev"
@@ -26,8 +26,4 @@
     "mincer": "~1.4.0",
     "ejs": "~2.5.5"
   },
-  "eyeglass": {
-    "exports": "eyeglass-exports.js",
-    "needs": "^0.7.1"
-  }
 }

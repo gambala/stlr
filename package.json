@@ -4,7 +4,6 @@
   "description": "stlr is a couple of mixins for sass",
   "style": "app/assets/stylesheets/stlr.scss",
   "sass": "app/assets/stylesheets/stlr.scss",
-  "main": "app/javascript/scripts/WebFontLoader.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/gambala/stlr"

@@ -13,5 +13,4 @@ Gem::Specification.new do |s|
   s.files    = `git ls-files`.split("\n")
   s.add_runtime_dependency 'sass', '>= 3.3.4'
   s.add_runtime_dependency 'autoprefixer-rails', '>= 5.2.1'
-  s.add_development_dependency 'term-ansicolor' # Converter
 end

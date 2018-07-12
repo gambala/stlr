@@ -3,10 +3,11 @@
 .DS_Store
 .rbenv-version
 .rvmrc
-.sass-cache
+Gemfile.lock
+
 /.bundle
+/.sass-cache
+/node_modules
+/tmp
 /vendor/bundle
 /vendor/cache
-Gemfile.lock
-node_modules
-tmp/

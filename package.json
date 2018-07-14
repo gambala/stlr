@@ -29,6 +29,7 @@
     "normalize.css": "^8.0.0",
     "remodal": "^1.1.1",
     "smooth-scroll": "cferdinandi/smooth-scroll",
+    "what-input": "^4.1.1",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {

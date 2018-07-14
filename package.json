@@ -23,11 +23,13 @@
   },
   "dependencies": {
     "blueimp-gallery": "^2.31.0",
+    "element-closest": "^2.0.2",
     "fontfaceobserver": "^2.0.13",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
     "remodal": "^1.1.1",
-    "smooth-scroll": "cferdinandi/smooth-scroll"
+    "smooth-scroll": "cferdinandi/smooth-scroll",
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "node-sass": "~3.7.0",

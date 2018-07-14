@@ -2,6 +2,7 @@
   "name": "stlr",
   "version": "2.0.0",
   "description": "stlr is a couple of mixins for sass",
+  "main": "es6/index.js",
   "style": "app/assets/stylesheets/stlr.scss",
   "sass": "app/assets/stylesheets/stlr.scss",
   "repository": {

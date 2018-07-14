@@ -21,6 +21,14 @@
   "bugs": {
     "url": "https://github.com/gambala/stlr/issues"
   },
+  "dependencies": {
+    "blueimp-gallery": "^2.31.0",
+    "fontfaceobserver": "^2.0.13",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0",
+    "remodal": "^1.1.1",
+    "smooth-scroll": "cferdinandi/smooth-scroll"
+  },
   "devDependencies": {
     "node-sass": "~3.7.0",
     "mincer": "~1.4.0",

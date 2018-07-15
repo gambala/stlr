@@ -1,7 +1,6 @@
 import 'blueimp-gallery';
 import 'blueimp-gallery/js/jquery.blueimp-gallery';
 
-const start = () => {
-};
+const start = () => {};
 
 export default { start };

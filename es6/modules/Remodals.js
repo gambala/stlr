@@ -11,7 +11,7 @@ const initElement = (remodal) => {
 };
 
 const initAll = () => {
-  const nodes = document.querySelectorAll('.remodal');
+  const nodes = document.querySelectorAll('div:not(.modal-section) .remodal');
   [...nodes].forEach(node => initElement(node));
 };
 

@@ -1,9 +1,9 @@
 ujs.closeBsModals();
 ujs.closeRemodals();
 
-if ($('#<%= dashed(params[:partial]) %>').length) {
+if ($('#<%= params[:block] || dashed(params[:partial]) %>').length) {
   ujs.html('#flashes', '<%= j render("flashes") %>');
-  ujs.replace('#<%= dashed(params[:partial]) %>', '<%= j render(params[:partial]) %>');
+  ujs.replace('#<%= params[:block] || dashed(params[:partial]) %>', '<%= j render(params[:partial]) %>');
 } else {
   ujs.visit('<%= url %>');
 }

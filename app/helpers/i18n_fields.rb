@@ -38,7 +38,7 @@ module I18nFields
       true
     end
 
-    define_method translations= do |value|
+    define_method :translations= do |value|
       return if value.blank?
 
       value.each do |locale, fields|

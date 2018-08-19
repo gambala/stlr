@@ -38,6 +38,16 @@ module I18nFields
       true
     end
 
+    define_method translations= do |value|
+      return if value.blank?
+
+      value.each do |locale, fields|
+        fields.each do |field, translation|
+          I18nTranslation.find_by(locale: locale, key: i18n_key(field)).update(value: translation)
+        end
+      end
+    end
+
     @i18n_fields.each do |field|
       define_method(field) { |locale = nil| i18n_t(i18n_key(field), locale: locale) }
     end

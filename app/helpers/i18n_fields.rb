@@ -34,7 +34,7 @@ module I18nFields
     end
 
     define_method :translated? do |locale = I18n.locale|
-      i18n_fields.each { |field| return false if public_send(field, locale).blank? }
+      i18n_fields.each { |field| return false if public_send("i18n_#{field}", locale).blank? }
       true
     end
 
@@ -49,7 +49,9 @@ module I18nFields
     end
 
     @i18n_fields.each do |field|
-      define_method(field) { |locale = nil| i18n_t(i18n_key(field), locale: locale) }
+      define_method("i18n_#{field}") do |locale = nil|
+        i18n_t i18n_key(field), locale: locale, record: self, field: field
+      end
     end
   end
 

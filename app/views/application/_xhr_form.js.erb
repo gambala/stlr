@@ -1,0 +1,4 @@
+<% partial ||= 'form' %>
+<% id ||= dashed(partial) %>
+<%= render 'xhr_flashes' %>
+ujs.replace('#<%= id %>', '<%= j render(partial) %>');

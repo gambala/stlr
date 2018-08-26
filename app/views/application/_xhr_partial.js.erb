@@ -2,7 +2,7 @@ ujs.closeBsModals();
 ujs.closeRemodals();
 
 if ($('#<%= params[:block] || dashed(params[:partial]) %>').length) {
-  ujs.html('#flashes', '<%= j render("flashes") %>');
+  <%= render 'xhr_flashes' %>
   ujs.replace('#<%= params[:block] || dashed(params[:partial]) %>', '<%= j render(params[:partial]) %>');
 } else {
   ujs.visit('<%= url %>');

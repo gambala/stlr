@@ -31,6 +31,14 @@ module WithI18nFields
       result
     end
 
+    def i18n_type(field)
+      i18n_types[field.to_sym]
+    end
+
+    def i18n_types
+      self.class.i18n_types
+    end
+
     def translated?(locale = I18n.locale)
       i18n_fields.each { |field| return false if public_send("i18n_#{field}", locale).blank? }
       true
@@ -50,11 +58,14 @@ module WithI18nFields
   class_methods do
     def i18n_fields(*args)
       return @i18n_fields if args.empty?
-
       options = args.extract_options!
-      @i18n_fields = args
+      @i18n_fields = [] if @i18n_fields.blank?
+      @i18n_types = {} if @i18n_types.blank?
+      @i18n_fields += args
 
-      @i18n_fields.each do |field|
+      args.each do |field|
+        @i18n_types[field.to_sym] = options[:as] || :string
+
         define_method("i18n_#{field}") do |locale = nil|
           i18n_t i18n_key(field), locale: locale, record: self, field: field
         end
@@ -63,6 +74,10 @@ module WithI18nFields
 
     def i18n_key_prefix
       "activerecord.values.#{model_name.i18n_key}"
+    end
+
+    def i18n_types
+      @i18n_types
     end
   end
 end

@@ -32,7 +32,7 @@ module WithI18nFields
     end
 
     def i18n_type(field)
-      i18n_types[field.to_sym]
+      self.class.i18n_type(field)
     end
 
     def i18n_types
@@ -64,16 +64,21 @@ module WithI18nFields
       @i18n_fields += args
 
       args.each do |field|
-        @i18n_types[field.to_sym] = options[:as] || :string
+        as = options[:as] || :string
+        @i18n_types[field.to_sym] = as
 
         define_method("i18n_#{field}") do |locale = nil|
-          i18n_t i18n_key(field), locale: locale, record: self, field: field
+          i18n_t i18n_key(field), locale: locale, record: self, field: field, as: as
         end
       end
     end
 
     def i18n_key_prefix
       "activerecord.values.#{model_name.i18n_key}"
+    end
+
+    def i18n_type(field)
+      @i18n_types[field.to_sym]
     end
 
     def i18n_types

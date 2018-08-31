@@ -5,7 +5,9 @@ module I18nHelper
     case as
     when :integer
       return value.to_i
-    when :string
+    when :html
+      return value.html_safe
+    else
       return value.in_time_zone if value.is_a?(Time)
 
       if value.is_a?(String)

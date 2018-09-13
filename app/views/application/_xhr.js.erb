@@ -1,1 +1,2 @@
+<% url = request.fullpath unless local_assigns[:url] %>
 <%= render "xhr_#{params[:partial] ? 'partial' : 'page'}", url: url %>

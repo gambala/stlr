@@ -1,0 +1,23 @@
+@import breakpoint
+
+#title_bar
+  background: none
+  border: none
+  box-shadow: none
+  text-shadow: none
+  z-index: 1
+
+  #titlebar_left,
+  #titlebar_right
+    vertical-align: bottom
+
+  +breakpoint(max-width 767px)
+    padding: 10px 10px
+
+    #titlebar_left,
+    #titlebar_right
+      height: auto
+
+    h2
+      font-size: 16px
+      line-height: 21px

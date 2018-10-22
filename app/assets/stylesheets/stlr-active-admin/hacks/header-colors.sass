@@ -1,0 +1,63 @@
+@import breakpoint
+@import variables
+
+#header
+  background: $header-background
+  border-bottom: 1px solid $header-border-color
+  box-shadow: none
+
+  a,
+  a:link
+    color: $link-color
+
+  ul.tabs > li
+    a
+      border-radius: 3px
+      padding: 3px 6px
+
+      +breakpoint(max-width 767px)
+        font-size: 10px
+        padding: 2px 4px
+
+    ul
+      background: #fff
+      border: 1px solid #b7b7b7
+      border-radius: 0 0 5px 5px
+      box-shadow: none
+      margin-top: 0
+      max-width: 100%
+      width: 100%
+
+      +breakpoint(max-width 767px)
+        margin-top: -2px
+
+      li a:hover
+        background: #EAF8FF
+        color: #E54B4B
+
+    &:hover > a
+      background: #EAF8FF
+      color: #E54B4B
+
+    &.current > a
+      background: #EAF8FF
+      color: #E54B4B
+
+    &.has_nested > a
+      border: 1px solid transparent
+      border-bottom: none
+
+    &.has_nested:hover > a
+      background-color: #fff
+      border-bottom: none
+      border-color: #b7b7b7
+      border-radius: 5px 5px 0 0
+
+    &.has_nested.current > a
+      background-color: #EAF8FF
+
+    &.has_nested.current:hover > a
+      background-color: #fff
+
+    +breakpoint(max-width 767px)
+      margin: 2px

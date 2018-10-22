@@ -1,0 +1,34 @@
+@import breakpoint
+
+#active_admin_content
+  padding: 6px 30px 30px
+
+  +breakpoint(max-width 767px)
+    padding: 12px 10px
+
+  +breakpoint(768px)
+    display: flex
+    justify-content: space-between
+
+  #main_content_wrapper
+    float: none
+
+    +breakpoint(max-width 767px)
+      width: calc(100vw - 20px);
+
+    #main_content
+      margin-right: 0
+
+  #sidebar
+    float: none
+    width: 270px
+
+    +breakpoint(max-width 767px)
+      margin-left: 0
+      margin-top: 30px
+      width: auto
+
+  &.with_sidebar
+    +breakpoint(768px)
+      #main_content_wrapper
+        width: calc(100vw - 270px - 30px - 60px - 10px)

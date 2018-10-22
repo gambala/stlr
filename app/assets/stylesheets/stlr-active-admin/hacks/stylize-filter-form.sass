@@ -1,0 +1,55 @@
+@import breakpoint
+
+form.filter_form .filter_form_field
+  display: flex
+  align-items: center
+  flex-flow: row wrap
+  justify-content: flex-start
+  margin: 0 -5px 12px
+
+  .label
+    margin: 0 5px
+
+    +breakpoint(max-width 530px)
+      width: 100%
+
+    +breakpoint(768px)
+      width: 100%
+
+  &.select_and_search select
+    margin: 3px 5px
+    width: 150px
+
+    +breakpoint(max-width 530px)
+      width: 40%
+
+    +breakpoint(768px)
+      width: 40%
+
+  &.select_and_search .select2-container
+    margin: 3px 5px
+    width: 150px !important
+
+    +breakpoint(max-width 530px)
+      width: 40% !important
+
+    +breakpoint(768px)
+      width: 40% !important
+
+  &.select_and_search input[type="text"],
+  &.filter_date_range input[type="text"],
+  &.filter_boolean select,
+  &.filter_boolean .select2-container
+    flex: 1 0 auto
+    margin: 3px 5px
+    width: 200px
+
+    +breakpoint(max-width 530px)
+      width: 40%
+
+    +breakpoint(768px)
+      width: 40%
+
+form .buttons,
+form .actions
+  margin-top: 0

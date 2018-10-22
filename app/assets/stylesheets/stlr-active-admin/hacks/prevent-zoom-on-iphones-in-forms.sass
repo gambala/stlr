@@ -1,0 +1,19 @@
+@import breakpoint
+
+// Fix iOS zoom when focus on fields
++breakpoint(max-width 767px)
+  button,
+  input,
+  optgroup,
+  select,
+  textarea,
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="url"],
+  form input[type="tel"],
+  form input[type="date"],
+  form input[type="time"],
+  form textarea
+    font-size: 16px

@@ -1,0 +1,60 @@
+@import breakpoint
+
+.comments
+  .active_admin_comment
+    display: flex
+    flex-flow: column nowrap
+    margin-bottom: 18px
+
+    .active_admin_comment_meta
+      margin-bottom: 3px
+      width: auto
+
+      +breakpoint(768px)
+        display: flex
+        flex-flow: row wrap
+
+      span
+        float: none
+        margin-right: 10px
+        order: 1
+
+        +breakpoint(768px)
+          width: 150px
+
+      .active_admin_comment_author,
+        float: none
+        margin-right: 10px
+        order: 2
+
+      a
+        float: none
+        order: 3
+
+    .active_admin_comment_body
+      +breakpoint(max-width 767px)
+        margin-left: 0
+
+      +breakpoint(768px)
+        margin-left: (150px + 10px)
+
+  .pagination_information
+    float: none
+    margin-bottom: 18px
+
+    +breakpoint(768px)
+      margin-left: (150px + 10px)
+
+  form.active_admin_comment
+    fieldset.inputs
+      border: none
+
+    textarea
+      margin-left: 0
+      width: 100%
+
+    +breakpoint(max-width 767px)
+      margin-left: 0
+
+    +breakpoint(768px)
+      margin-left: (150px + 10px)

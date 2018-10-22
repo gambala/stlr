@@ -1,0 +1,30 @@
+@import breakpoint
+
+#header
+  padding: 0 10px
+
+  +breakpoint(768px)
+    padding: 0 30px
+
+  .navigation
+    display: flex
+    justify-content: flex-end
+    position: relative
+
+    #utility_nav,
+    #site_title
+      display: none
+
+    #tabs
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-end
+      margin-left: -10px
+      margin-right: -10px
+
+      +breakpoint(max-width 767px)
+        padding: 3px 4px
+
+      & > li ul
+        left: auto
+        right: 0

@@ -1,0 +1,20 @@
+@import breakpoint
+
+form fieldset ol > li.has_many_container
+  display: block
+
+  +breakpoint(max-width 767px)
+    padding: 6px 0
+
+  .has_many_fields
+    background: #efefef
+    border: 1px solid #d3d3d3
+    box-shadow: none
+    margin-bottom: 12px
+
+    +breakpoint(max-width 767px)
+      ol > li
+        padding: 6px 10px
+
+      ol > li.hidden
+        padding: 0

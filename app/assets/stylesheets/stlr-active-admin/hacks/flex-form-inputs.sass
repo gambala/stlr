@@ -1,0 +1,56 @@
+@import breakpoint
+
+// For each field group
+form fieldset ol > li
+  align-items: center
+  display: flex
+  flex-flow: row wrap
+  justify-content: flex-end
+
+  +breakpoint(max-width 767px)
+    padding: 6px 0
+
+  label
+    +breakpoint(max-width 767px)
+      width: 100%
+
+  &.boolean label
+    align-items: center
+    display: flex
+
+    +breakpoint(max-width 767px)
+      padding: 0
+      width: 100%
+
+    +breakpoint(768px)
+      padding-left: 22px
+
+form input[type="text"],
+form input[type="text"].date-time-picker-input,
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="url"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="time"],
+form input[type="file"],
+form select,
+form textarea,
+form .cke_chrome
+  +breakpoint(max-width 767px)
+    width: 100%
+
+  +breakpoint(768px)
+    margin-left: 22px
+    width: calc(80% - 22px)
+
+form .select2-container
+  min-width: 90px
+
+  +breakpoint(max-width 767px)
+    width: 100% !important
+
+  +breakpoint(768px)
+    margin-left: 22px
+    width: calc(80% - 22px) !important

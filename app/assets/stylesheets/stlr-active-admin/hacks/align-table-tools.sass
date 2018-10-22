@@ -1,0 +1,28 @@
+.table_tools
+  display: flex
+  margin-bottom: 0
+  padding: 1px 35px
+  pointer-events: none
+  position: absolute
+
+  &::after
+    content: none
+
+  .dropdown_menu
+    display: block
+    float: none
+
+    .dropdown_menu_list_wrapper
+      pointer-events: all
+
+a.table_tools_button,
+.dropdown_menu .dropdown_menu_button,
+.table_tools .dropdown_menu_button
+  opacity: 1
+  pointer-events: all
+  visibility: visible
+
+  &.disabled,
+    opacity: 0
+    pointer-events: none
+    visibility: hidden

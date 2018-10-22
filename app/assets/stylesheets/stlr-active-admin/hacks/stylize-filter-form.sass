@@ -36,6 +36,16 @@ form.filter_form .filter_form_field
     +breakpoint(768px)
       width: 40% !important
 
+  &.filter_select .select2-container
+    margin: 3px 5px
+    width: 150px !important
+
+    +breakpoint(max-width 530px)
+      width: 100% !important
+
+    +breakpoint(768px)
+      width: 100% !important
+
   &.select_and_search input[type="text"],
   &.filter_date_range input[type="text"],
   &.filter_boolean select,

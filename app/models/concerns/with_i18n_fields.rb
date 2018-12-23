@@ -74,7 +74,7 @@ module WithI18nFields
     end
 
     def i18n_key_prefix
-      "activerecord.values.#{model_name.i18n_key}"
+      "activerecord.values.#{table_name.singularize.to_sym}"
     end
 
     def i18n_type(field)

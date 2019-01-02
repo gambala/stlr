@@ -71,7 +71,7 @@ module SeoHelper
   def text_from_html(value)
     return nil if value.blank?
     value = strip_tags(value)
-    value = truncate(value, length: 150)
+    value = truncate(value, length: 150, escape: false)
     value = value.gsub(/\n\n+/, '\n').gsub(/^\n|\n$/, ' ').squish
     value
   end
